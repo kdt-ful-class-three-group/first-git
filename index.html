@@ -4,12 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      label {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+
+      button {
+        display: flex;
+        justify-content: center;
+      }
+
+      .contaner {
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        border: 1px solid black;
+        width: 80%;
+        border-radius: 20px;
+      }
+
+      .radiochack {
+      }
+
+      .submitButton {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px 30px;
+      }
+    </style>
   </head>
   <body>
-    <h1>공욱재삼촌은 미남인가?</h1>
-    <label for="face"><input type="radio" name="face" value="yes" />yes</label>
-    <label for="face"><input type="radio" name="face" value="no" /> no</label>
-    <button type="submit">의견 보내기</button>
-    <script src="./script.js"></script>
+    <div class="contaner">
+      <h1>공욱재삼촌은 미남인가?</h1>
+      <div class="radioChack">
+        <label for="face"
+          ><input type="radio" name="face" value="yes" />yes</label
+        >
+        <label for="face"
+          ><input type="radio" name="face" value="no" />no</label
+        >
+      </div>
+      <div class="submitButton">
+        <button type="submit">의견 보내기</button>
+      </div>
+    </div>
   </body>
 </html>
