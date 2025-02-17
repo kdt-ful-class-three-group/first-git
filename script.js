@@ -11,8 +11,10 @@ btn.addEventListener("click", () => {
     let img = document.createElement("img");
     img.src = "./img/yes.jpg";
     img.alt = "yes";
-    // img.width = "100px";
+    img.style.width = "50%";
 
     div.append(img);
+  }
+  if (input[0].checked === false && input[1].checked === false) {
   }
 });
