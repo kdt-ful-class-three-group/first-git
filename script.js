@@ -5,24 +5,18 @@ btn.addEventListener("click", () => {
 
   console.log(input[0].checked, input[1].checked);
 
+  let div = document.createElement("div");
+  document.body.append(div);
+  let img = document.createElement("img");
+  div.append(img);
   if (input[0].checked === true && input[1].checked === false) {
-    let div = document.createElement("div");
-    document.body.append(div);
-    let img = document.createElement("img");
     img.src = "./img/yes.jpg";
     img.alt = "yes";
     img.style.width = "50%";
-
-    div.append(img);
   }
   if (input[0].checked === false && input[1].checked === true) {
-    let div = document.createElement("div");
-    document.body.append(div);
-    let img = document.createElement("img");
     img.src = "./img/no.jpg";
     img.alt = "yes";
     img.style.width = "50%";
-
-    div.append(img);
   }
 });
